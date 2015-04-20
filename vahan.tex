@@ -1,0 +1,129 @@
+\documentclass[10pt]{res}
+
+\usepackage{calc}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage[normalem]{ulem}
+\usepackage[bottom=.2in]{geometry}
+\useunder{\uline}{\ulined}{}%
+\DeclareUrlCommand{\bulurl}{\def\UrlFont{\ttfamily\ulined}}
+
+\begin{document}
+
+\author{n0p}
+\title{CV}
+
+\topmargin=-.6in
+\name{\makebox[\textwidth][l]{\LARGE{Vahan Stepanyan}}}
+
+\address{
+\\
+Date of birth:\\
+Mobile:\\
+Address:\\
+E-mail:
+}
+
+\address{
+\\
+16/08/1990\\
++374 98 900846\\
+Armenia, Yerevan, 42 Charents str., 33 apt.\\
+\bulurl{nop144d@gmail.com}
+}
+
+\newcommand{\latestjobyear}{Present \hspace{-13pt}}
+\newcommand{\yearpostfix}{
+\quad
+\phantom{\texttt{M.S}}
+}
+\newcommand{\tabitem}{\hspace{25pt}}
+\newcommand{\literacy}{
+\hspace{-10pt} \textbullet \hspace{1pt} \it
+}
+%\makeatletter
+%\newcommand\sectionentry{\sectionentryoptarg{\relax}}
+%    \newcommand\sectionentryoptarg[1]{
+%    \parbox{3in}{#1}
+%    } %
+%\makeatother
+
+\begin{resume}
+
+%\parindent -.5in {dasd\\}
+
+\section{EDUCATION}
+\vspace{5pt}
+	Yerevan State University\hfill 2013 --\phantom{ 2016} \quad \texttt{Ph.D} \\
+	Informatics and Applied Mathematics \vspace{5pt} \\
+	%
+	Moscow Institute of Physics and Technology (State University) \hfill 2011 -- 2013 \quad \texttt{M.S.}\\
+	Control and Applied Mathematics \vspace{5pt} \\
+	%
+	Yerevan State University\hfill 2007 -- 2011 \quad \texttt{B.S.}\\
+	Informatics and Applied Mathematics
+
+\section{EMPLOYMENT}
+\vspace{5pt}
+	VMware Inc. \hfill 2013 -- \latestjobyear \yearpostfix \\
+	Software Developer \vspace{5pt} \\
+	%
+	Institute for System Programming of Russian Academy of Sciences \hfill 2011 -- 2013 \yearpostfix \\% \latestjobyear \yearpostfix \\
+	R\&D Engineer \vspace{5pt} \\
+	%
+	System Programming Lab at Yerevan State University \hfill 2010 -- 2011 \yearpostfix \\
+	R\&D Engineer
+
+\section{COMPUTER LITERACY}
+\vspace{5pt}
+\begin{tabular}{l p{4in} l}
+\literacy  Programming languages:
+&
+Pascal/Delphi, C/C++, x86 asm, ARMv7 asm, Bash/Batch, Ruby, Python
+\\
+\literacy Libraries/Frameworks:
+&
+WinAPI, KOL, STL, Qt, Boost
+\\
+\literacy Reverse Engineering:
+&
+unpacking, disassembling, debugging, decompiling
+\\
+\literacy Optimization skills:
+&
+complexity of algorithms, compiler-specific and platform-specific optimizations, profiling, low-level optimizations 
+\\
+\literacy Computer systems:
+&
+PC, Embedded systems, microcontrollers
+\\
+\literacy Administration:
+&
+Linux (RedHat based and Debian based), Windows  (from an earlier version MS-DOS and Win95)
+\\
+\literacy Typing skills:
+&
+80 wpm (qwerty)
+\end{tabular}
+
+\section{PROJECTS}
+	Open Source PE format Import Viewer written in \\
+	%
+	PE/ELF-x86/ARM disassembler (not finished yet) 
+	%
+\section{LANGUAGES}
+	Armenian - native, Russian - fluent, English - good
+	 
+\section{PROFESSIONAL INTERESTS}
+Low-level and system-programming, reverse engineering, demoscene, information security, \\hardware, malwares, packers/protectors, operating systems, compilers, 
+optimizations, \\performance-critical and memory-critical programming, vintage computers \\
+prime numbers, p-adic number system, fractals, data compression algorithms, cryptography \\
+microcontrollers, robotics
+ \\
+\begin{flushright}
+\vfill \scriptsize \texttt{last updated \today}
+\end{flushright}
+
+\end{resume}
+
+\end{document}
